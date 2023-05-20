@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pompiere', cursive;
+}
+
+:root{
+    -azul--escuro-: rgb(43, 117, 255);
+    -lilas-: rgb(206, 146, 255);
+}
+
+.conteudo{
+    padding-top: 50px;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+img {
+    object-fit: cover;
+  }
+  
+  /* img:hover {
+    opacity: 0.5;
+  } */
+
+
+.cartao {
+    margin-top: 5rem;
+    background-color: transparent;
+    width: 300px;
+    height: 390px;
+    perspective: 1000px;
+  }
+  
+ 
+  .cartao-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .cartao:hover .cartao-content {
+    
+    transform: rotateY(180deg);
+  }
+  
+  .cartao-frontal, .cartao-traseiro {
+    border: rgb(86, 0, 167) 2px solid;
+    border-style: groove;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .cartao-frontal {
+    backface-visibility: visible;
+    background-size: cover;
+    background-image: url(./3830008.webp);
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .cartao-traseiro {
+    opacity: 0.9;
+    background-color: rgb(5, 5, 5);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  h1{
+    background-color: white;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-shadow: 2px 3px 2px rgb(7, 73, 255);
+
+  }
+  h2{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 80, 145);
+
+  }
+
+  .insta, .twit, .git, .kedin{
+    color: rgb(0, 134, 7);
+  }
+
+  p{
+    margin: 2rem;
+    color: rgb(44, 255, 96);
+    font-size: 30px;
+  }
+
+  .euuu{
+    object-fit: cover;
+    margin-bottom: 2.0rem;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: white;
+    border-right-color: paleturquoise;
+    border-bottom-color: rgb(157, 255, 165);
+    border-left-color: rgb(108, 255, 255);
+  }
+  .koikoi{
+    object-fit: cover;
+    margin-top: 3rem;
+    margin-bottom: 1.0rem;
+    border-radius: 100%;
+    border: 5px solid;
+    border-top-color: white;
+    border-right-color: rgb(116, 252, 122);
+    border-bottom-color: rgb(81, 255, 96);
+    border-left-color: rgb(0, 182, 24);
+  }
+
+  h3{
+    margin: 20px;
+    color: rgb(255, 255, 255);
+  }
+
+  .icones{
+    gap: 3px;
+  }
+
+
+.button{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    background: none;
+    color: #ff0000;
+    cursor: pointer;
+    padding: 13px 23px;
+    text-align: center;
+    width: auto;
+    border: 3px solid #ff0000;
+}
